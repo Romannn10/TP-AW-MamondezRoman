@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.div-titulos .Titulo-Header{
+    font-size: 50px;
+    font-weight: bold;
+    color: gold;
+}
+.div-titulos .Titulo-Header span{
+    font-size: 50px;
+    font-weight: bold;
+    color:  blue;
+}
+header{
+    background: rgb(5,34,250);
+    background: linear-gradient(90deg, rgba(5,34,250,1) 49%, rgba(219,255,0,1) 51%);
+    
+}
+.logoheader
+{
+    height: 120px; width: auto; padding: 10px;
+}
+.redes img
+{
+    height: 50px; width: auto; padding: 10px;
+}
+.barra-navegacion a
+{
+    
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border: 2px black solid;
+    padding: 2px;
+}
+.Noticias img
+{
+    height: 400px; width: auto; padding: 10px;
+}
+.info-jugadores img
+{
+    height: 200px; width: auto; padding: 10px;
+}
