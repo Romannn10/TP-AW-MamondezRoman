@@ -1,61 +1,126 @@
-
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 20px;
 }
 
-.div-titulos .Titulo-Header{
-    font-size: 50px;
-    font-weight: bold;
-    color: gold;
-}
-.div-titulos .Titulo-Header span{
-    font-size: 50px;
-    font-weight: bold;
-    color:  blue;
-}
 header{
     background: rgb(5,34,250);
     background: linear-gradient(90deg, rgba(5,34,250,1) 49%, rgba(219,255,0,1) 51%);
-    
 }
-.logoheader
-{
-    height: 120px; width: auto; padding: 10px;
+
+.div-titulos{
+    align-items: center;
+    text-align: center;
+}
+
+.Titulo-Header{
+    color: gold;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: -90px;
+}
+
+.Titulo-Header span{
+    color:  blue;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.logoheader{
+    height: 120px;
+    width: auto; 
+    padding: 10px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.descripcion{
+    color:aquamarine;
+    font-size: 30px;
+
+}
+.main{
+    background-color: rgb(5, 4, 66);
+}
+.main-plantel{
+    background-color: rgb(5, 4, 66);;
 }
 .redes img
 {
-    height: 50px; width: auto; padding: 10px;
+    height: 50px;
+    width: auto;
+    padding: 10px;
 }
+
+.barra-navegacion{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 .barra-navegacion a
-{
-    
-    font-size: 25px;
+{   
+    font-size: 20px;
     font-weight: bold;
     color: black;
     text-decoration: none;
     border: 2px black solid;
     padding: 2px;
+    
 }
+.Noticias{
+    
+    text-align: center;
+    justify-content: center;
+
+}
+.main .antes-noticia{
+    color:darksalmon;
+    text-align: center;
+    justify-content: top;
+    
+}
+.pie-foto{
+    color: aliceblue;
+    margin-top: -5px;
+}
+
 .Noticias img
 {
     height: 400px; width: auto; padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    
 }
+
 .info-jugadores img
 {
     height: 200px; width: auto; padding: 10px;
 }
+
 .tarjeta{
     width: 210px;
-    height: 285px;
-    background-color: white;
-    border: 3px solid orange;
+    height: 295px;
+    background-color: rgb(53, 16, 184);
+    border: 3px solid gold;
     text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 5px white;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .tarjeta-img{
@@ -68,10 +133,59 @@ header{
 }
 
 .tarjeta h3{
-    color: orange;
+    color: gold;
     font-size: 30px;
 }
 
 .tarjeta h4{
     font-size: 20px;
+}
+.footer{
+    background-color: rgb(24, 82, 158);
+}
+.footer .derechos .titulo-footer{
+    color: aliceblue;
+}
+.footer .derechos .parrafo-footer{
+    color: aliceblue;
+}
+.footer .autor {
+    color: aliceblue;
+}
+.contenedor-main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    background-color: rgb(3, 28, 73);
+    margin-bottom: 60px;
+}
+
+.contenedor-main img{
+    height: 400px; width: 100%;
+    border-radius: 5px;
+}
+.contenedor-main h2{
+    color: aliceblue;
+}
+.contenedor-secundario{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    background-color: rgb(3, 28, 73);
+}
+.contenedor-secundario img{
+    width: 100%; height: 70%;
+    border-radius: 5px;
+}
+.contenedor-secundario h2{
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+.main-plantel{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
