@@ -9,20 +9,25 @@ header{
     background: rgb(5,34,250);
     background: linear-gradient(90deg, rgba(5,34,250,1) 49%, rgba(219,255,0,1) 51%);
 }
+.redes{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
 
 .div-titulos{
     align-items: center;
     text-align: center;
 }
 
-.Titulo-Header{
+.div-titulos__titulo-header{
     color: gold;
     font-size: 70px;
     font-weight: bold;
     margin-top: -90px;
 }
 
-.Titulo-Header span{
+.div-titulos__titulo-header span{
     color:  blue;
     font-size: 70px;
     font-weight: bold;
@@ -34,17 +39,18 @@ header{
     padding: 10px;
 }
 
-.contenedor{
+.main__contenedor{
     display: flex;
     justify-content: space-between;
 }
 
-.redes{
+.footer__redes{
     display: flex;
     justify-content: end;
     align-items: end;
 }
-.descripcion{
+
+.main__descripcion{
     color:aquamarine;
     font-size: 30px;
 
@@ -62,7 +68,8 @@ header{
     padding: 10px;
 }
 
-.barra-navegacion{
+
+.contenedor__barra-navegacion{
     display: flex;
     justify-content: start;
     align-items: start;
@@ -71,17 +78,22 @@ header{
     margin-top: 10px;
 }
 
-.barra-navegacion a
+.contenedor__barra-navegacion a
 {   
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    border: 2px black solid;
+    
     padding: 2px;
     
 }
-.Noticias{
+.contenedor__barra-navegacion a:hover{
+    border-bottom: 2px solid white;
+    color: blue;
+    background-color: yellow;
+}
+.main__card-noticias{
     
     text-align: center;
     justify-content: center;
@@ -93,16 +105,16 @@ header{
     justify-content: top;
     
 }
-.pie-foto{
+.main__pie-foto{
     color: aliceblue;
     margin-top: -5px;
 }
 
-.Noticias img
+.main__card-noticias img
 {
-    height: 400px; width: auto; padding: 10px;
+    height: 400px; width: auto; 
     justify-content: center;
-    margin-top: 20px;
+    
     
 }
 
@@ -111,7 +123,7 @@ header{
     height: 200px; width: auto; padding: 10px;
 }
 
-.tarjeta{
+.main-plantel__tarjeta{
     width: 210px;
     height: 295px;
     background-color: rgb(53, 16, 184);
@@ -123,7 +135,7 @@ header{
     margin-bottom: 20px;
 }
 
-.tarjeta-img{
+.main-plantel__tarjeta-img{
     width: 100%;
     height: 200px;
     background-image: url(img/Desert.jpg);
@@ -132,27 +144,27 @@ header{
     border-radius: 8px 8px 0px 0px;
 }
 
-.tarjeta h3{
+.main-plantel__tarjeta h3{
     color: gold;
     font-size: 30px;
 }
 
-.tarjeta h4{
+.main-plantel__tarjeta h4{
     font-size: 20px;
 }
 .footer{
     background-color: rgb(24, 82, 158);
 }
-.footer .derechos .titulo-footer{
+.footer .footer__derechos .footer__titulo-footer{
     color: aliceblue;
 }
-.footer .derechos .parrafo-footer{
+.footer .footer__derechos .footer__parrafo-footer{
     color: aliceblue;
 }
-.footer .autor {
+.footer .footer__autor {
     color: aliceblue;
 }
-.contenedor-main{
+.main__contenedor{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
@@ -160,24 +172,25 @@ header{
     margin-bottom: 60px;
 }
 
-.contenedor-main img{
+.main__contenedor img{
     height: 400px; width: 100%;
     border-radius: 5px;
 }
-.contenedor-main h2{
+.main__contenedor h2{
     color: aliceblue;
 }
-.contenedor-secundario{
+.main__contenedor-secundario{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
     background-color: rgb(3, 28, 73);
 }
-.contenedor-secundario img{
+.main__contenedor-secundario img{
     width: 100%; height: 70%;
     border-radius: 5px;
+    
 }
-.contenedor-secundario h2{
+.main__contenedor-secundario h2{
     margin-top: 20px;
     color: aliceblue;
     font-size: 17px;
